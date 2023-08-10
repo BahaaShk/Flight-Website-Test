@@ -118,6 +118,9 @@ ion-icon {
 address {
   font-style: normal;
 }
+/* *{
+  border: 2px solid red;
+} */
 
 html {
   font-family: var(--ff-dm-sans);
@@ -475,12 +478,12 @@ body:active {
   }
 
   100% {
-    transform: translate(-50%, 35%);
-    -webkit-transform: translate(-50%, 35%);
-    -moz-transform: translate(-50%, 35%);
-    -ms-transform: translate(-50%, 35%);
-    -o-transform: translate(-50%, 35%);
-  }
+    transform: translate(-50%, 30%);
+    -webkit-transform: translate(-50%, 30%);
+    -moz-transform: translate(-50%, 30%);
+    -ms-transform: translate(-50%, 30%);
+    -o-transform: translate(-50%, 30%);
+}
 }
 /*-----------------------------------*\
   #SERVICE
@@ -1019,11 +1022,22 @@ body:active {
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+@media (max-width: 480px){
+  .newsletter .section-title{
+  max-width: 340px;
+  }
+
+  .abs-img{
+    width: 350px;
+    height: 400px;
+    object-fit: contain;
+    margin-block-start: 10px;
+  }
+}
 
 @media (min-width: 575px) {
   .container {
     max-width: 540px;
-    width: 100%;
     margin-inline: auto;
   }
 
